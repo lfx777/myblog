@@ -1,0 +1,33 @@
+{% extends "core/base.html" %}
+
+{% block title %}欢迎来到我的个人小站{% endblock %}
+
+{% block content %}
+<section class="welcome">
+    <h2>欢迎来访！</h2>
+    <p>这里是我的个人小站，一个分享技术思考、生活感悟和创作成果的空间。</p>
+    <p>我热爱编程、阅读和一切有趣的事物，在这里记录我的学习和成长历程。</p>
+</section>
+
+<section class="recent-posts">
+    <h3>最新文章</h3>
+    <p>博客功能正在建设中，即将为您呈现精彩内容...</p>
+    <!-- 未来这里可以显示最新的博客文章列表 -->
+    <!-- {% for post in recent_posts %} -->
+    <!-- <article> -->
+    <!--     <h4><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4> -->
+    <!--     <p>{{ post.published_date|date:"Y年m月d日" }}</p> -->
+    <!-- </article> -->
+    <!-- {% endfor %} -->
+</section>
+
+<section class="features">
+    <h3>小站特色</h3>
+    <ul>
+        <li>📝 技术博客与教程</li>
+        <li>🎨 创意项目展示</li>
+        <li>📚 读书笔记与推荐</li>
+        <li>💡 日常思考与感悟</li>
+    </ul>
+</section>
+{% endblock %}

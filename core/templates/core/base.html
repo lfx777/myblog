@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}个人小站{% endblock %}</title>
+    <!-- 未来可以在这里引入 Bootstrap 或其他 CSS 框架 -->
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #3498db;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>个人小站</h1>
+            <p class="subtitle">分享思考与创作的地方</p>
+            <nav>
+                <a href="/">首页</a>
+                <a href="/blog/">博客</a>
+                <a href="/about/">关于我</a>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %}
+            <!-- 主要内容会在这里被填充 -->
+            {% endblock %}
+        </main>
+
+        <footer>
+            <p>© {% now "Y" %} 个人小站. 用心创作，用心分享.</p>
+        </footer>
+    </div>
+</body>
+</html>
