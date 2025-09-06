@@ -1,0 +1,16 @@
+# 核心框架
+Django==5.2.6
+
+# 数据库驱动
+psycopg2-binary==2.9.10
+
+# Markdown 渲染 (如果你决定用的话)
+markdown==3.9
+# Pygments==2.18.0
+
+# 自动生成 Slug (如果你决定用的话)
+django-autoslug==1.9.9
+
+# 未来可能用于生产环境（对象存储、部署等）
+# django-storages==1.14.2
+# gunicorn==21.2.0
